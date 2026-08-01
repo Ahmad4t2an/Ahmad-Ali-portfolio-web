@@ -17,10 +17,10 @@ export const Logo: React.FC<LogoProps> = ({
   // Height (in px) the logo mark should render at for each size step.
   // Tuned so the logo never looks too small or too large in the navbar/footer.
   const heightMap = {
-    sm: { icon: 30, full: 34 },
-    md: { icon: 38, full: 42 },
-    lg: { icon: 46, full: 52 },
-    xl: { icon: 60, full: 68 }
+    sm: { icon: 44, full: 50 },
+    md: { icon: 56, full: 64 },
+    lg: { icon: 78, full: 90 },
+    xl: { icon: 96, full: 112 }
   };
 
   const currentHeight = heightMap[size];
