@@ -12,6 +12,14 @@ body {
   overflow-x: hidden;
 }
 
+/* overflow-x: clip (not hidden) on html stops the fixed decorative
+   blobs from creating a horizontal scroll track on mobile Chrome,
+   without reintroducing the iOS Safari scroll-freeze issue that
+   overflow-x: hidden on <html> previously caused. */
+html {
+  overflow-x: clip;
+}
+
 /* Hide scrollbar for Chrome, Safari, Edge (webkit) — html/body only */
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
