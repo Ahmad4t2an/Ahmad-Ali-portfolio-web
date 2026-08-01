@@ -75,13 +75,13 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050505] text-slate-100 font-sans antialiased selection:bg-blue-500 selection:text-white relative overflow-x-hidden">
+    <div className="min-h-screen bg-[#050505] text-slate-100 font-sans antialiased selection:bg-blue-500 selection:text-white relative">
       {/* Sophisticated Dark Ambient Radial Blobs */}
       <div className="blob fixed -top-24 -right-24" />
       <div className="blob fixed -bottom-24 -left-24" />
 
       {/* 3D WebGL Background Canvas */}
-      <ThreeBackground accentColor={accentColor} />
+      
 
       {/* Main Glass Navbar */}
       <Navbar
