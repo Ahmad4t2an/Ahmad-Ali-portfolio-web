@@ -125,10 +125,10 @@ export const GallerySection: React.FC = () => {
                 />
               </div>
 
-              <div className="p-6 bg-slate-950 border-t border-slate-800 space-y-2">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-xl font-bold text-white">{activeLightbox.title}</h3>
-                  <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 text-xs font-semibold rounded-full border border-cyan-500/30">
+              <div className="p-4 sm:p-6 bg-slate-950 border-t border-slate-800 space-y-2">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <h3 className="text-xl font-bold text-white min-w-0 break-words">{activeLightbox.title}</h3>
+                  <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 text-xs font-semibold rounded-full border border-cyan-500/30 shrink-0">
                     {activeLightbox.category}
                   </span>
                 </div>

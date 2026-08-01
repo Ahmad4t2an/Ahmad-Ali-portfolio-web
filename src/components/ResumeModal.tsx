@@ -25,20 +25,20 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
           className="relative w-full max-w-4xl max-h-[92vh] bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl flex flex-col overflow-hidden my-auto"
         >
           {/* Header Controls */}
-          <div className="flex items-center justify-between px-6 py-4 bg-slate-950 border-b border-slate-800 shrink-0">
-            <div className="flex items-center gap-2">
-              <span className="w-3 h-3 rounded-full bg-cyan-500 animate-pulse" />
-              <h3 className="text-sm font-bold text-white uppercase tracking-wider">
-                Digital Curriculum Vitae — {PERSONAL_INFO.name}
+          <div className="flex flex-wrap items-center justify-between gap-3 px-4 sm:px-6 py-4 bg-slate-950 border-b border-slate-800 shrink-0">
+            <div className="flex items-center gap-2 min-w-0">
+              <span className="w-3 h-3 rounded-full bg-cyan-500 animate-pulse shrink-0" />
+              <h3 className="text-sm font-bold text-white uppercase tracking-wider truncate">
+                Digital CV — {PERSONAL_INFO.name}
               </h3>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 shrink-0">
               <button
                 onClick={handlePrint}
-                className="px-3.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-xl flex items-center gap-1.5 transition-colors"
+                className="px-3 sm:px-3.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-xl flex items-center gap-1.5 transition-colors"
               >
-                <Printer className="w-3.5 h-3.5" /> Print / Save PDF
+                <Printer className="w-3.5 h-3.5" /> <span className="hidden sm:inline">Print / Save PDF</span>
               </button>
               <button
                 onClick={onClose}

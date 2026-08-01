@@ -92,7 +92,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({
                   />
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-semibold text-slate-300 mb-1 uppercase tracking-wider">
                       Issuer / Academy *
@@ -166,15 +166,15 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({
           ) : (
             certificate && (
               <div className="max-h-[85vh] overflow-y-auto pr-1">
-                <div className="flex items-center gap-3 mb-6">
-                  <span className="p-3 rounded-2xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+                <div className="flex items-center gap-3 mb-6 pr-10">
+                  <span className="p-3 rounded-2xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 shrink-0">
                     <Award className="w-8 h-8" />
                   </span>
-                  <div>
+                  <div className="min-w-0">
                     <span className="px-2.5 py-0.5 bg-cyan-500/20 text-cyan-300 text-[10px] font-semibold rounded-full uppercase tracking-wider">
                       {certificate.status}
                     </span>
-                    <h3 className="text-xl font-bold text-white mt-1">{certificate.title}</h3>
+                    <h3 className="text-xl font-bold text-white mt-1 break-words">{certificate.title}</h3>
                     <p className="text-xs text-slate-400">
                       Issued by <span className="text-cyan-400 font-semibold">{certificate.issuer}</span> • {certificate.date}
                     </p>
